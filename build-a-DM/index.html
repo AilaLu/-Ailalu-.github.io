@@ -6,17 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-    <meta name="description" content="We are going to build a direct message with Ruby on Rails with Action Cable. Action Cable is a framework that allows you to integrate Websocket for Rails, it follows the pub&#x2F;sub pattern.  Go to config">
+    <meta name="description" content="with Rails6 and Action cableWe are going to build a direct message with Ruby on Rails with Action Cable. Action Cable is a framework that allows you to integrate Websocket for Rails, it follows the pu">
 <meta property="og:type" content="article">
-<meta property="og:title" content="build a DM">
+<meta property="og:title" content="Building instant message">
 <meta property="og:url" content="http://www.aila.com/build-a-DM/index.html">
 <meta property="og:site_name" content="Aila - like no otter">
-<meta property="og:description" content="We are going to build a direct message with Ruby on Rails with Action Cable. Action Cable is a framework that allows you to integrate Websocket for Rails, it follows the pub&#x2F;sub pattern.  Go to config">
+<meta property="og:description" content="with Rails6 and Action cableWe are going to build a direct message with Ruby on Rails with Action Cable. Action Cable is a framework that allows you to integrate Websocket for Rails, it follows the pu">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.imgur.com/d7bUr2v.png">
 <meta property="article:published_time" content="2022-08-16T04:57:55.000Z">
-<meta property="article:modified_time" content="2022-08-23T15:50:15.716Z">
+<meta property="article:modified_time" content="2022-08-25T09:58:50.900Z">
 <meta property="article:author" content="Aila">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.imgur.com/d7bUr2v.png">
     
     
       
@@ -42,7 +44,7 @@
       
     
     <!-- title -->
-    <title>build a DM</title>
+    <title>Building instant message</title>
     <!-- styles -->
     
 <link rel="stylesheet" href="/css/style.css">
@@ -97,21 +99,21 @@
     <div id="share" style="display: none">
       <ul>
   <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://www.aila.com/build-a-DM/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://www.aila.com/build-a-DM/&text=build a DM"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://www.aila.com/build-a-DM/&title=build a DM"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://www.aila.com/build-a-DM/&is_video=false&description=build a DM"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=build a DM&body=Check out this article: http://www.aila.com/build-a-DM/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://www.aila.com/build-a-DM/&title=build a DM"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://www.aila.com/build-a-DM/&title=build a DM"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://www.aila.com/build-a-DM/&title=build a DM"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://www.aila.com/build-a-DM/&title=build a DM"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://www.aila.com/build-a-DM/&name=build a DM&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://www.aila.com/build-a-DM/&t=build a DM"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://www.aila.com/build-a-DM/&text=Building instant message"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://www.aila.com/build-a-DM/&title=Building instant message"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://www.aila.com/build-a-DM/&is_video=false&description=Building instant message"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Building instant message&body=Check out this article: http://www.aila.com/build-a-DM/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://www.aila.com/build-a-DM/&title=Building instant message"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://www.aila.com/build-a-DM/&title=Building instant message"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://www.aila.com/build-a-DM/&title=Building instant message"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://www.aila.com/build-a-DM/&title=Building instant message"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://www.aila.com/build-a-DM/&name=Building instant message&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://www.aila.com/build-a-DM/&t=Building instant message"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
     <div id="toc">
-      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#create-a-scaffold-Room-with-column-name"><span class="toc-number">1.</span> <span class="toc-text">create a scaffold Room, with column name</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#create-a-model-User-with-column-username"><span class="toc-number">2.</span> <span class="toc-text">create a model User, with column username</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#create-a-model-Message-with-column-content-and-belongs-to-the-room-and-user"><span class="toc-number">3.</span> <span class="toc-text">create a model Message, with column content, and belongs to the  room and user.</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#with-Rails6-and-Action-cable"><span class="toc-number">1.</span> <span class="toc-text">with Rails6 and Action cable</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Set-configs"><span class="toc-number">1.1.</span> <span class="toc-text">Set configs</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Model%E2%80%99s-parent"><span class="toc-number">2.</span> <span class="toc-text">Model’s parent</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Models"><span class="toc-number">3.</span> <span class="toc-text">Models</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Room"><span class="toc-number">4.</span> <span class="toc-text">Room</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#User"><span class="toc-number">5.</span> <span class="toc-text">User</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Message"><span class="toc-number">6.</span> <span class="toc-text">Message</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link"><span class="toc-number">6.0.1.</span> <span class="toc-text"></span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Channel"><span class="toc-number">7.</span> <span class="toc-text">Channel</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Job"><span class="toc-number">8.</span> <span class="toc-text">Job</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Code"><span class="toc-number">8.1.</span> <span class="toc-text">Code</span></a></li></ol></li></ol>
     </div>
   </span>
 </div>
@@ -123,7 +125,7 @@
   <header>
     
     <h1 class="posttitle" itemprop="name headline">
-        build a DM
+        Building instant message
     </h1>
 
 
@@ -150,20 +152,197 @@
   
 
   <div class="content" itemprop="articleBody">
-    <p>We are going to build a direct message with Ruby on Rails with <code>Action Cable</code>. <code>Action Cable</code> is a framework that allows you to integrate <code>Websocket</code> for Rails, it follows the <code>pub/sub</code> pattern.</p>
-<ol>
-<li>Go to <code>config/cable.yml</code> and set <code>async</code> to <code>redis</code>, add url <code>redis://localhost:6379/1</code>.</li>
-<li>Next, go to <code>config/application.rb</code>, add <code>config.action_cable.mount_path = &#39;/cable&#39;</code></li>
-<li>Lastly, go to <code> app/assets/javascripts/application.js</code> import  <code>cable.js</code></li>
-</ol>
-<h3 id="create-a-scaffold-Room-with-column-name"><a href="#create-a-scaffold-Room-with-column-name" class="headerlink" title="create a scaffold Room, with column name"></a>create a scaffold <code>Room</code>, with column name</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">rails g scaffold Room name</span></span><br></pre></td></tr></table></figure>
-<h3 id="create-a-model-User-with-column-username"><a href="#create-a-model-User-with-column-username" class="headerlink" title="create a model User, with column username"></a>create a model <code>User</code>, with column username</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">rails g model User username</span></span><br></pre></td></tr></table></figure>
-<h3 id="create-a-model-Message-with-column-content-and-belongs-to-the-room-and-user"><a href="#create-a-model-Message-with-column-content-and-belongs-to-the-room-and-user" class="headerlink" title="create a model Message, with column content, and belongs to the  room and user."></a>create a model <code>Message</code>, with column content, and belongs to the  <code>room</code> and <code>user</code>.</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">rails g scaffold Message content:text room:references user:references</span></span><br></pre></td></tr></table></figure>
+    <h2 id="with-Rails6-and-Action-cable"><a href="#with-Rails6-and-Action-cable" class="headerlink" title="with Rails6 and Action cable"></a>with Rails6 and Action cable</h2><p>We are going to build a direct message with Ruby on Rails with Action Cable. Action Cable is a framework that allows you to integrate Websocket for Rails, it follows the pub&#x2F;sub pattern.</p>
+<hr>
+<h3 id="Set-configs"><a href="#Set-configs" class="headerlink" title="Set configs"></a>Set configs</h3><ul>
+<li>Go to <code>config/cable.yml</code><br>set async to <code>redis</code>, add url <code>redis://localhost:6379/1.</code></li>
+<li>Go to <code>config/application.rb</code>,<br>add <code>config.action_cable.mount_path = &#39;/cable&#39;</code></li>
+<li>Go to <code>app/assets/javascripts/application.js</code> import <code>cable.js</code></li>
+</ul>
+<hr>
+<h2 id="Model’s-parent"><a href="#Model’s-parent" class="headerlink" title="Model’s parent"></a>Model’s parent</h2><blockquote>
+<ul>
+<li>in <code>Application_controller.rb</code> we define <code>current_user</code> with session</li>
+<li><code>current_user</code> is used in Room’s index when we show the current_user </li>
+<li>also used in message controller when we create a message and we will know which user it’s from.</li>
+</ul>
+</blockquote>
+<h2 id="Models"><a href="#Models" class="headerlink" title="Models"></a>Models</h2><blockquote>
+<h2 id="Room"><a href="#Room" class="headerlink" title="Room"></a>Room</h2><ul>
+<li>one room has_many messages</li>
+<li>in room <code>index.html.erb</code>, it shows the current_room, current_consumer and shows the messages.</li>
+<li>in room <code>room_controller.rb</code>, the show action will render :index, so all rooms can be rendered on index</li>
+</ul>
+</blockquote>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">rails g scaffold Room name</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<h2 id="User"><a href="#User" class="headerlink" title="User"></a>User</h2><ul>
+<li>one user has_many messages</li>
+<li>in <code>user.rb</code>, it has the code of how the username is generated</li>
+</ul>
+</blockquote>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">rails g model User username</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<h2 id="Message"><a href="#Message" class="headerlink" title="Message"></a>Message</h2><ul>
+<li><code>messages_contoller</code>‘s action create will link to job <code>SendMessageJob.perform_later(@message)</code></li>
+</ul>
+</blockquote>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">rails g scaffold Message content:text room:references user:references</span></span><br></pre></td></tr></table></figure>
+<h4 id=""><a href="#" class="headerlink" title=""></a></h4><h2 id="Channel"><a href="#Channel" class="headerlink" title="Channel"></a>Channel</h2><blockquote>
+<ul>
+<li><code>room_channel.rb</code>, add function <code>subscribed</code> :<code>stream_from</code> “room_channel”. <code>unsubscribed</code>, <code>speak(data)</code>:<code>ActionCable.server.broadcast</code></li>
+<li><code>room_channel.js</code>, <code>create.subscription</code> add all the js that will retrieve message with <code>connected</code>, <code>disconnected</code>, <code>received(data)</code></li>
+<li><code>connection.rb</code> is for authenticating consumers</li>
+<li><code>consumer.js</code> is for connecting consumer</li>
+</ul>
+</blockquote>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">rails g channel room</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Job"><a href="#Job" class="headerlink" title="Job"></a>Job</h2><blockquote>
+<p>in <code>send_message_job.rb</code>, it calls <code>ActionCable.server.broadcast</code> to the room</p>
+</blockquote>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">rails g job send_message</span></span><br></pre></td></tr></table></figure>
+
+
+<hr>
+<h3 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h3><blockquote>
+<p>Go to <code>Room</code>‘s index view <code>index.html.erb</code></p>
+<ul>
+<li>we let all the messages show on this page if the room exist</li>
+</ul>
+</blockquote>
+<figure class="highlight erb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="language-xml">&lt;%</span><span class="language-ruby"><span class="keyword">if</span> <span class="variable">@room</span>.present? </span><span class="language-xml">%&gt;</span></span><br><span class="line"><span class="language-xml">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>&lt;%=</span><span class="language-ruby"> <span class="variable">@room</span>.name</span><span class="language-xml">%&gt;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    &lt;%</span><span class="language-ruby"> <span class="variable">@room</span>.messages.each <span class="keyword">do</span> |<span class="params">message</span>| </span><span class="language-xml">%&gt;</span></span><br><span class="line"><span class="language-xml">      &lt;%=</span><span class="language-ruby"> message.content </span><span class="language-xml">%&gt;</span></span><br><span class="line"><span class="language-xml">    &lt;%</span><span class="language-ruby"><span class="keyword">end</span></span><span class="language-xml">%&gt;</span></span><br><span class="line"><span class="language-xml">&lt;%=</span><span class="language-ruby"> render <span class="string">&#x27;messages/form&#x27;</span>, <span class="symbol">message:</span> Message.new, <span class="symbol">room:</span> <span class="variable">@room</span> </span><span class="language-xml">%&gt;</span></span><br><span class="line"><span class="language-xml">&lt;%</span><span class="language-ruby"><span class="keyword">end</span></span><span class="language-xml">%&gt;</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>Go to <code>Room</code>‘s <code>Model</code></p>
+</blockquote>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">has_many <span class="symbol">:messages</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>Go to <code>Messege</code>‘s <code>_form .html.erb</code></p>
+<ul>
+<li>we let the message only show the entry boc and subimt, we put room_id hidden_field so we can know which room the message belongs to</li>
+</ul>
+</blockquote>
+<p><strong>delete</strong></p>
+<figure class="highlight erb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;field&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">   &lt;%=</span><span class="language-ruby"> form.label <span class="symbol">:room_id</span> </span><span class="language-xml">%&gt;</span></span><br><span class="line"><span class="language-xml">   &lt;%=</span><span class="language-ruby"> form.text_field <span class="symbol">:room_id</span> </span><span class="language-xml">%&gt;</span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;field&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">   &lt;%=</span><span class="language-ruby"> form.label <span class="symbol">:user_id</span> </span><span class="language-xml">%&gt;</span></span><br><span class="line"><span class="language-xml">   &lt;%=</span><span class="language-ruby"> form.text_field <span class="symbol">:user_id</span> </span><span class="language-xml">%&gt;</span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+<p><strong>add</strong></p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%= form.hidden_field <span class="symbol">:room_id</span>, <span class="symbol">value:</span> room.id %&gt;</span><br></pre></td></tr></table></figure>
 
 <blockquote>
-<p>in <code>ApplicationController.rb</code> define current_user</p>
+<p>Go to <code>Message</code>‘s controller, add below @message declaration</p>
 </blockquote>
-<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">ApplicationController</span> &lt; <span class="title class_ inherited__">ActionController::Base</span></span><br><span class="line">  helper_method <span class="symbol">:current_user</span></span><br><span class="line">  </span><br><span class="line">  <span class="keyword">def</span> <span class="title function_">current_user</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> <span class="variable">@current_user</span> <span class="keyword">if</span> <span class="variable">@current_user</span>.present?</span><br><span class="line">    <span class="keyword">if</span> session[<span class="symbol">:user_id</span>].present?</span><br><span class="line">      </span><br><span class="line">      <span class="variable">@current_user</span> = User.find(session[<span class="symbol">:user_id</span>])</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">      <span class="variable">@current_user</span> = User.generate</span><br><span class="line">      session[<span class="symbol">:user_id</span>] = <span class="variable">@current_user</span>.id</span><br><span class="line">      <span class="variable">@current_user</span></span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">@message</span>.user = current_user </span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Go to ApplicationController, adding <code>helper_method</code> for <code>current_user</code> to make it availble everywhere.<br>add a function <code>current_user</code>, if we have a current_user id in the session, we’re using the user, otherwise we’re creating one user.</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">helper_method :current_user</span><br><span class="line"></span><br><span class="line">def current_user</span><br><span class="line">    return @current_user if @current_user.present?</span><br><span class="line"></span><br><span class="line">    if session[:user_id].present?</span><br><span class="line">      @current_user = User.find(session[:user_id])</span><br><span class="line">    else</span><br><span class="line">      @current_user = User.generate</span><br><span class="line">      session[:user_id] = @current_user.id</span><br><span class="line">    end</span><br><span class="line">  end</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Go to <code>User</code>‘s Model <code>user.rb</code>, we’ll make a class method <code>generate</code> which generates usernames:)</p>
+</blockquote>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">self</span>.generate</span><br><span class="line">    username = <span class="string">&quot;<span class="subst">#&#123;[<span class="string">&quot;a&quot;</span>, <span class="string">&quot;z&quot;</span>].sample&#125;</span>_<span class="subst">#&#123;[<span class="number">1</span>, <span class="number">10</span>].sample&#125;</span>&quot;</span></span><br><span class="line">    create(<span class="symbol">username:</span> username)</span><br><span class="line">  <span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Go to <code>Room</code>’s index view <code>index.html.erb</code></p>
+<ul>
+<li>show all the rooms options you can go to</li>
+</ul>
+</blockquote>
+<figure class="highlight erb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="language-xml">&lt;%</span><span class="language-ruby"> <span class="variable">@rooms</span>.each <span class="keyword">do</span> |<span class="params">room</span>| </span><span class="language-xml">%&gt;</span></span><br><span class="line"><span class="language-xml">      &lt;%=</span><span class="language-ruby"> link_to room <span class="keyword">do</span> </span><span class="language-xml">%&gt;</span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;<span class="name">div</span>&gt;</span>&lt;%=</span><span class="language-ruby"> room.name </span><span class="language-xml">%&gt;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      &lt;%</span><span class="language-ruby"> <span class="keyword">end</span></span><span class="language-xml">%&gt;</span></span><br><span class="line"><span class="language-xml">    &lt;%</span><span class="language-ruby"> <span class="keyword">end</span> </span><span class="language-xml">%&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Go to <code>Message</code>’s controller, add below in function <code>create</code></p>
+<ul>
+<li>let message do it’s thing and broadcast it to room.</li>
+</ul>
+</blockquote>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">create</span></span><br><span class="line">    <span class="variable">@message</span> = <span class="title class_">Message</span>.new(message_params)</span><br><span class="line">    <span class="variable">@message</span>.user = current_user</span><br><span class="line">    <span class="variable">@message</span>.save</span><br><span class="line">    ActionCable.server.broadcast <span class="string">&quot;room_channel_<span class="subst">#&#123;<span class="variable">@message</span>.room_id&#125;</span>&quot;</span>, <span class="symbol">message:</span> message</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<blockquote>
+<p>Go to terminal, create a <code>channel</code> named [room]</p>
+</blockquote>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rails g channel room</span><br></pre></td></tr></table></figure>
+<p><img src="https://i.imgur.com/d7bUr2v.png"></p>
+<blockquote>
+<p>Go to channels file tree, select the<code>room_channel.rb</code>, add the <code>stream_from</code> </p>
+</blockquote>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">subscribed</span></span><br><span class="line">    stream_from <span class="string">&quot;room_channel_<span class="subst">#&#123;params[<span class="symbol">:room_id</span>]&#125;</span>&quot;</span></span><br><span class="line">  <span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Go to <code>room_channel.js</code></p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">consumer.<span class="property">subscriptions</span>.<span class="title function_">create</span>(&#123; <span class="attr">channel</span>: <span class="string">&quot;RoomChannel&quot;</span>, <span class="attr">room_id</span>: <span class="number">1</span>&#125;, &#123;</span><br><span class="line">  <span class="title function_">connected</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;connected!&quot;</span>);</span><br><span class="line">  &#125;,</span><br><span class="line">    </span><br><span class="line">  <span class="title function_">disconnected</span>(<span class="params"></span>) &#123;</span><br><span class="line">    </span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  <span class="title function_">received</span>(<span class="params">data</span>) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(data);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Go to <code>Message</code>’s controller, add below in function <code>create</code></p>
+</blockquote>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">create</span></span><br><span class="line">    <span class="variable">@message</span> = <span class="title class_">Message</span>.new(message_params)</span><br><span class="line">    <span class="variable">@message</span>.user = current_user</span><br><span class="line">    <span class="variable">@message</span>.save</span><br><span class="line">    </span><br><span class="line">    html = render(</span><br><span class="line">        <span class="symbol">partial:</span> <span class="string">&#x27;messages/message&#x27;</span>,</span><br><span class="line">        <span class="symbol">locals:</span> &#123;<span class="symbol">message:</span> <span class="variable">@message</span>&#125;</span><br><span class="line">    )</span><br><span class="line">    </span><br><span class="line">    ActionCable.server.broadcast <span class="string">&quot;room_channel_<span class="subst">#&#123;<span class="variable">@message</span>.room_id&#125;</span>&quot;</span>, <span class="symbol">html:</span> html</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Go to <code>messages</code> filetree, and add a file <code>_message.html.erb</code>, which is the <code>partial</code> in </p>
+</blockquote>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;%= <span class="string">&#x27;me&#x27;</span> <span class="keyword">if</span> message.user == current_user<span class="string">%%&gt;</span></span><br><span class="line"><span class="string">      &lt;%</span>= message.content %&gt;</span><br><span class="line">            &lt;%= message.user.username %&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Go to <code>Room</code>‘s index view <code>index.html.erb</code>, add an id so later we could go to <code>room_channel.js</code> to get the message.</p>
+</blockquote>
+<figure class="highlight erb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="language-xml">&lt;%</span><span class="language-ruby"><span class="keyword">if</span> <span class="variable">@room</span>.present? </span><span class="language-xml">%&gt;</span></span><br><span class="line"><span class="language-xml">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>&lt;%=</span><span class="language-ruby"> <span class="variable">@room</span>.name</span><span class="language-xml">%&gt;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span> = <span class="string">&quot;messages&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    &lt;%</span><span class="language-ruby"> <span class="variable">@room</span>.messages.each <span class="keyword">do</span> |<span class="params">message</span>| </span><span class="language-xml">%&gt;</span></span><br><span class="line"><span class="language-xml">        &lt;%=</span><span class="language-ruby"> render <span class="string">&#x27;messages/message&#x27;</span>, <span class="symbol">message:</span> message </span><span class="language-xml">%&gt;</span></span><br><span class="line"><span class="language-xml">    &lt;%</span><span class="language-ruby"><span class="keyword">end</span> </span><span class="language-xml">%&gt;</span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">&lt;%=</span><span class="language-ruby"> render <span class="string">&#x27;messages/form&#x27;</span>, <span class="symbol">message:</span> Message.new, <span class="symbol">room:</span> <span class="variable">@room</span> </span><span class="language-xml">%&gt;</span></span><br><span class="line"><span class="language-xml">&lt;%</span><span class="language-ruby"><span class="keyword">end</span></span><span class="language-xml">%&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Go to terminal, generate a <code>job</code> called [send_message]</p>
+</blockquote>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">rails g job send_message</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Go to <code>send_message_job.rb</code>, remove the html and ActionCable code from <code>message_controller</code> to here, and add <code>ApplicationController</code>, remove the @ from messages as instance variables.</p>
+</blockquote>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">perform</span>(<span class="params">message</span>)</span><br><span class="line">   html = ApplicationController.render(</span><br><span class="line">     <span class="symbol">partial:</span> <span class="string">&#x27;messages/message&#x27;</span>,</span><br><span class="line">     <span class="symbol">locals:</span> &#123;<span class="symbol">message:</span> message&#125;</span><br><span class="line"> )</span><br><span class="line"> </span><br><span class="line"> ActionCable.server.broadcast <span class="string">&quot;room_channel_<span class="subst">#&#123;message.room_id&#125;</span>&quot;</span>, <span class="symbol">html:</span> html</span><br><span class="line"> <span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Go back to <code>message_controller</code>, add below in function create</p>
+</blockquote>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">create</span></span><br><span class="line">    <span class="variable">@message</span> = <span class="title class_">Message</span>.new(message_params)</span><br><span class="line">    <span class="variable">@message</span>.user = current_user</span><br><span class="line">    <span class="variable">@message</span>.save</span><br><span class="line">    SendMessageJob.perform_later(<span class="variable">@message</span>)</span><br><span class="line">  <span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Rerun rails s</p>
+</blockquote>
+<blockquote>
+<p>Go to <code>room_channel.js</code></p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">received</span>(<span class="params">data</span>) &#123;</span><br><span class="line">   <span class="variable language_">console</span>.<span class="title function_">log</span>(data);</span><br><span class="line">   <span class="keyword">const</span> = messageContainer = <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&#x27;messages&#x27;</span>)</span><br><span class="line">   messageContainer.<span class="property">innerHTML</span> = messageContainer.<span class="property">innerHTML</span> + data.<span class="property">html</span></span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Go to <code>send_message_job.rb</code>, change html into my_message and their_message</p>
+</blockquote>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"> <span class="keyword">class</span> <span class="title class_">SendMessageJob</span> &lt; <span class="title class_ inherited__">ApplicationJob</span></span><br><span class="line">  queue_as <span class="symbol">:default</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">def</span> <span class="title function_">perform</span>(<span class="params">message</span>)</span><br><span class="line">    my_message = ApplicationController.render(</span><br><span class="line">      <span class="symbol">partial:</span> <span class="string">&#x27;messages/my_message&#x27;</span>,</span><br><span class="line">      <span class="symbol">locals:</span> &#123;<span class="symbol">message:</span> message&#125;</span><br><span class="line">  )</span><br><span class="line"></span><br><span class="line">  their_message = ApplicationController.render(</span><br><span class="line">    <span class="symbol">partial:</span> <span class="string">&#x27;messages/their_message&#x27;</span>,</span><br><span class="line">    <span class="symbol">locals:</span> &#123;<span class="symbol">message:</span> message&#125;</span><br><span class="line">)</span><br><span class="line">  </span><br><span class="line">  ActionCable.server.broadcast <span class="string">&quot;room_channel_<span class="subst">#&#123;message.room_id&#125;</span>&quot;</span>, <span class="symbol">my_message:</span> my_message, <span class="symbol">their_message:</span> their_message, <span class="symbol">message:</span> message</span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>In the messages file, create <code>_my_message.html.erb</code>, and <code>_their_message.html.erb</code></p>
+</blockquote>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;%= <span class="string">&#x27;me&#x27;</span> <span class="keyword">if</span> message.user == current_user<span class="string">%%&gt;</span></span><br><span class="line"><span class="string">  &lt;%</span>= message.content %&gt;</span><br><span class="line">      &lt;%= message.user.username %&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;%= message.content %&gt;</span><br><span class="line">     &lt;%= message.user.username %&gt;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Go to <code>room_channel.js</code>, add element and user-id.</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">received</span>(<span class="params">data</span>) &#123;</span><br><span class="line">   <span class="variable language_">console</span>.<span class="title function_">log</span>(data);</span><br><span class="line">   <span class="keyword">const</span> element = <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&#x27;user-id&#x27;</span>)</span><br><span class="line">   <span class="keyword">const</span> user_id = <span class="title class_">Number</span>(element.<span class="title function_">getAttribute</span>(<span class="string">&#x27;data-user-id&#x27;</span>))</span><br><span class="line">   </span><br><span class="line">   <span class="keyword">let</span> html</span><br><span class="line">   <span class="keyword">if</span>(user_id === data.<span class="property">message</span>.<span class="property">user_id</span>)&#123;</span><br><span class="line">       html = data.<span class="property">my_message</span></span><br><span class="line">   &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">       html = data.<span class="property">their_message</span></span><br><span class="line">   &#125;</span><br><span class="line">    <span class="keyword">const</span> = messageContainer = <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&#x27;messages&#x27;</span>)</span><br><span class="line">   messageContainer.<span class="property">innerHTML</span> = messageContainer.<span class="property">innerHTML</span> + data.<span class="property">html</span></span><br><span class="line"> &#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Go to <code>index.html.erb</code>, add these on the very top</p>
+<ul>
+<li>to let <code>room_channel.js</code> get its DOM</li>
+</ul>
+</blockquote>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id = <span class="string">&quot;room_id&quot;</span> data-room-id =<span class="string">&quot;&lt;%= @room.try(:id) %&gt;&quot;</span>&gt;&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">&lt;div id = &quot;room_id&quot; data-room-id =&quot;&lt;%= current_user.id %&gt;&quot;&gt;&lt;/div</span>&gt;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Go to <code>room_channel.js</code></p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> consumer <span class="keyword">from</span> <span class="string">&quot;./consumer&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">addEventListener</span>(<span class="string">&#x27;turbolinks:load&#x27;</span>, <span class="function">() =&gt;</span> &#123;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">const</span> room_element = <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&#x27;room-id&#x27;</span>);</span><br><span class="line">  <span class="keyword">const</span> room_id = room_element.<span class="title function_">getAttribute</span>(<span class="string">&#x27;data-room-id&#x27;</span>);</span><br><span class="line"></span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(room_id)</span><br><span class="line"></span><br><span class="line">  consumer.<span class="property">subscriptions</span>.<span class="title function_">create</span>(&#123; <span class="attr">channel</span>: <span class="string">&quot;RoomChannel&quot;</span>, <span class="attr">room_id</span>: room_id &#125;, &#123;</span><br><span class="line">    <span class="title function_">connected</span>(<span class="params"></span>) &#123;</span><br><span class="line">      <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;connected to &quot;</span> + room_id)</span><br><span class="line">      <span class="comment">// Called when the subscription is ready for use on the server</span></span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    <span class="title function_">disconnected</span>(<span class="params"></span>) &#123;</span><br><span class="line">      <span class="comment">// Called when the subscription has been terminated by the server</span></span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    <span class="title function_">received</span>(<span class="params">data</span>) &#123;</span><br><span class="line">      <span class="keyword">const</span> user_element = <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&#x27;user-id&#x27;</span>);</span><br><span class="line">      <span class="keyword">const</span> user_id = <span class="title class_">Number</span>(user_element.<span class="title function_">getAttribute</span>(<span class="string">&#x27;data-user-id&#x27;</span>));</span><br><span class="line"></span><br><span class="line">      <span class="keyword">let</span> html;</span><br><span class="line"></span><br><span class="line">      <span class="keyword">if</span> (user_id === data.<span class="property">message</span>.<span class="property">user_id</span>) &#123;</span><br><span class="line">        html = data.<span class="property">my_message</span></span><br><span class="line">      &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        html = data.<span class="property">their_message</span></span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      <span class="keyword">const</span> messageContainer = <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&#x27;messages&#x27;</span>)</span><br><span class="line">      messageContainer.<span class="property">innerHTML</span> = messageContainer.<span class="property">innerHTML</span> + html</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p> A fully functional chatroom, yay!</p>
+
   </div>
 </article>
 
@@ -188,22 +367,22 @@
     </div>
 
     <div id="toc-footer" style="display: none">
-      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#create-a-scaffold-Room-with-column-name"><span class="toc-number">1.</span> <span class="toc-text">create a scaffold Room, with column name</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#create-a-model-User-with-column-username"><span class="toc-number">2.</span> <span class="toc-text">create a model User, with column username</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#create-a-model-Message-with-column-content-and-belongs-to-the-room-and-user"><span class="toc-number">3.</span> <span class="toc-text">create a model Message, with column content, and belongs to the  room and user.</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#with-Rails6-and-Action-cable"><span class="toc-number">1.</span> <span class="toc-text">with Rails6 and Action cable</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Set-configs"><span class="toc-number">1.1.</span> <span class="toc-text">Set configs</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Model%E2%80%99s-parent"><span class="toc-number">2.</span> <span class="toc-text">Model’s parent</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Models"><span class="toc-number">3.</span> <span class="toc-text">Models</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Room"><span class="toc-number">4.</span> <span class="toc-text">Room</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#User"><span class="toc-number">5.</span> <span class="toc-text">User</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Message"><span class="toc-number">6.</span> <span class="toc-text">Message</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link"><span class="toc-number">6.0.1.</span> <span class="toc-text"></span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Channel"><span class="toc-number">7.</span> <span class="toc-text">Channel</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Job"><span class="toc-number">8.</span> <span class="toc-text">Job</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Code"><span class="toc-number">8.1.</span> <span class="toc-text">Code</span></a></li></ol></li></ol>
     </div>
 
     <div id="share-footer" style="display: none">
       <ul>
   <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://www.aila.com/build-a-DM/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://www.aila.com/build-a-DM/&text=build a DM"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://www.aila.com/build-a-DM/&title=build a DM"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://www.aila.com/build-a-DM/&is_video=false&description=build a DM"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=build a DM&body=Check out this article: http://www.aila.com/build-a-DM/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://www.aila.com/build-a-DM/&title=build a DM"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://www.aila.com/build-a-DM/&title=build a DM"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://www.aila.com/build-a-DM/&title=build a DM"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://www.aila.com/build-a-DM/&title=build a DM"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://www.aila.com/build-a-DM/&name=build a DM&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://www.aila.com/build-a-DM/&t=build a DM"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://www.aila.com/build-a-DM/&text=Building instant message"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://www.aila.com/build-a-DM/&title=Building instant message"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://www.aila.com/build-a-DM/&is_video=false&description=Building instant message"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Building instant message&body=Check out this article: http://www.aila.com/build-a-DM/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://www.aila.com/build-a-DM/&title=Building instant message"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://www.aila.com/build-a-DM/&title=Building instant message"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://www.aila.com/build-a-DM/&title=Building instant message"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://www.aila.com/build-a-DM/&title=Building instant message"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://www.aila.com/build-a-DM/&name=Building instant message&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://www.aila.com/build-a-DM/&t=Building instant message"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
